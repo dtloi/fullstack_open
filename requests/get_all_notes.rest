@@ -1,0 +1,27 @@
+GET http://localhost:3000/api/persons/1
+###
+GET http://localhost:3000/api/persons
+###
+POST http://localhost:3000/api/persons
+Content-Type: application/json
+
+{
+  "name": "Stepahnie",
+  "number": 300030003000
+}
+###
+POST http://localhost:3000/api/persons
+Content-Type: application/json
+
+{
+  "name": "Stepahnie",
+  "number": ""
+}
+
+###
+DELETE http://localhost:3000/api/persons/1
+Content-Type: application/json
+
+{
+  "id": 1
+}
