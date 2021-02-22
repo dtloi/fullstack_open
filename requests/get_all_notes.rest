@@ -1,8 +1,8 @@
-GET http://localhost:3000/api/persons/1
+GET http://localhost:3001/api/persons/1
 ###
-GET http://localhost:3000/api/persons
+GET http://localhost:3001/api/persons
 ###
-POST http://localhost:3000/api/persons
+POST http://localhost:3001/api/persons
 Content-Type: application/json
 
 {
@@ -10,16 +10,16 @@ Content-Type: application/json
   "number": 300030003000
 }
 ###
-POST http://localhost:3000/api/persons
+PUT http://localhost:3001/api/persons/60343bf152c85219ceab57f4
 Content-Type: application/json
 
 {
-  "name": "Stepahnie",
-  "number": ""
+  "name": "sadb",
+  "number": 578948932154
 }
 
 ###
-DELETE http://localhost:3000/api/persons/1
+DELETE http://localhost:3001/api/persons/1
 Content-Type: application/json
 
 {
