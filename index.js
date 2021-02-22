@@ -109,7 +109,13 @@ app.post('/api/persons', (request, response, next) => {
   person.save().then(savedPerson => {
     response.json(savedPerson)
   })
-  .catch(error => next(error))
+  .catch(error => {
+    const errorMsg = next(error)
+    console.log(errorMsg)
+    return errorMsg
+    //response.json(error.response.data)
+    
+  })
 })
 
 app.delete('/api/persons/:id', (request, response, next) => {
